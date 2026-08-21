@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fcconsulting.pl/sitemap.xml
+Sitemap: https://fcconsulting.com.pl/sitemap.xml

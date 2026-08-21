@@ -6,15 +6,15 @@
 <title>Dotacje i pożyczki unijne dla firm | FC Consulting</title>
 <meta name="description" content="Pozyskujemy dotacje i pożyczki unijne dla firm – od doboru programu po rozliczenie projektu. Bezpłatna analiza możliwości finansowania. Działamy w całej Polsce.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://fcconsulting.pl/">
+<link rel="canonical" href="https://fcconsulting.com.pl/">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:site_name" content="FC Consulting">
 <meta property="og:title" content="Dotacje i pożyczki unijne dla firm | FC Consulting">
 <meta property="og:description" content="Kompleksowe pozyskiwanie finansowania dla firm – od doboru programu po rozliczenie. Bezpłatna analiza możliwości finansowania.">
-<meta property="og:url" content="https://fcconsulting.pl/">
-<meta property="og:image" content="https://fcconsulting.pl/og-image.png">
+<meta property="og:url" content="https://fcconsulting.com.pl/">
+<meta property="og:image" content="https://fcconsulting.com.pl/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -33,7 +33,7 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "FC Consulting",
-  "url": "https://fcconsulting.pl/",
+  "url": "https://fcconsulting.com.pl/",
   "description": "Doradztwo w pozyskiwaniu dotacji i pożyczek unijnych dla przedsiębiorstw – od doboru programu finansowania, przez przygotowanie dokumentacji, po rozliczenie projektu.",
   "areaServed": { "@type": "Country", "name": "Polska" },
   "knowsAbout": [
@@ -98,20 +98,24 @@
 </script>
 
 <style>
-  /* ===== Paleta z fiszki: granat + złoto ===== */
+  /* ============================================================
+     FC CONSULTING — motyw ciemny (granat + złoto)
+     Paleta z fiszki marki, całość na granacie, sekcje różnicowane
+     odcieniem tła i cienkimi złotymi liniami.
+  ============================================================= */
   :root {
-    --navy:        #0A1B33;
-    --navy-deep:   #061224;
-    --navy-soft:   #12294A;
-    --gold:        #C9A227;
-    --gold-light:  #E3C567;
-    --gold-deep:   #8A6E15;
-    --cream:       #F7F4EC;
-    --white:       #FFFFFF;
-    --gray:        #5C6470;
-    --border:      #E2DED3;
+    --navy-900: #061020;   /* najciemniejszy — tło stopki i pasów */
+    --navy-800: #0A1B33;   /* tło podstawowe */
+    --navy-700: #0E2340;   /* panele i karty */
+    --navy-600: #14304F;   /* obramowania neutralne */
+    --gold:     #D6A94A;   /* akcent główny */
+    --gold-lt:  #E8C77E;   /* rozjaśnione złoto na tekst */
+    --gold-dk:  #B08A2E;
+    --text:     #E6EBF2;   /* tekst podstawowy */
+    --text-dim: #A9B6C7;   /* tekst drugorzędny */
+    --line:     rgba(214,169,74,.28);
     --max: 1180px;
-    --r: 6px;
+    --r: 4px;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -120,411 +124,352 @@
     *, *::before, *::after { animation: none !important; transition: none !important; }
   }
   body {
-    margin: 0;
+    margin: 0; background: var(--navy-800); color: var(--text-dim);
     font-family: 'Source Sans 3', -apple-system, 'Segoe UI', sans-serif;
-    font-size: 17.5px; line-height: 1.75;
-    color: #1A2130; background: var(--white);
+    font-size: 17px; line-height: 1.8;
   }
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 600; line-height: 1.2; margin: 0 0 18px;
-    color: var(--navy);
+    font-weight: 500; line-height: 1.22; margin: 0 0 18px; color: #fff;
   }
   p { margin: 0 0 18px; }
-  a { color: var(--gold-deep); text-decoration: underline; text-underline-offset: 3px; }
-  a:hover { color: var(--navy); }
-  :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  a { color: var(--gold-lt); text-decoration: none; }
+  a:hover { color: #fff; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 
-  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
-  section { padding: 100px 0; }
-  .band-navy { background: var(--navy); color: #DDE3EC; }
-  .band-navy--deep { background: var(--navy-deep); }
-  .band-navy h2, .band-navy h3 { color: var(--white); }
-  .band-cream { background: var(--cream); }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+  .intro { color: #fff; font-weight: 600; }
+  .mark { color: var(--gold-lt); }
 
-  .h1 { font-size: clamp(34px, 4.4vw, 52px); }
-  .h2 { font-size: clamp(30px, 3.8vw, 46px); }
-  .h3 { font-size: 23px; }
-  .lead { font-size: 19.5px; max-width: 64ch; }
-  .label {
-    display: inline-block; font-size: 12.5px; font-weight: 600; letter-spacing: .22em;
-    text-transform: uppercase; color: var(--gold-deep); margin-bottom: 18px;
+  section { padding: 104px 0; position: relative; }
+  .band-700 { background: var(--navy-700); }
+  .band-900 { background: var(--navy-900); }
+  .hairline { border-top: 1px solid rgba(255,255,255,.06); }
+
+  /* --- nagłówki sekcji --- */
+  .eyebrow {
+    display: block; text-align: center; color: var(--gold);
+    font-size: 12.5px; font-weight: 600; letter-spacing: .34em;
+    text-transform: uppercase; margin-bottom: 18px;
   }
-  .band-navy .label { color: var(--gold-light); }
-  .muted { color: var(--gray); }
-  /* wyróżnienia w treści */
-  strong, .key { color: var(--navy); font-weight: 600; }
-  .band-navy strong, .band-navy .key { color: var(--white); }
-  .mark {
-    color: var(--navy); font-weight: 600;
-    box-shadow: inset 0 -0.55em 0 rgba(201,162,39,.22);
+  .h2 { font-size: clamp(30px, 3.6vw, 42px); text-align: center; margin-bottom: 10px; }
+  .h2 em { font-style: normal; color: var(--gold); }
+  .rule { width: 76px; height: 1px; background: var(--gold); margin: 22px auto 34px; position: relative; }
+  .rule::before {
+    content: ""; position: absolute; left: 50%; top: -3px; transform: translateX(-50%) rotate(45deg);
+    width: 7px; height: 7px; background: var(--gold);
   }
-  .band-navy .mark { color: var(--white); box-shadow: inset 0 -0.55em 0 rgba(201,162,39,.35); }
-  /* pierwsze zdanie leadu mocniejsze */
-  .lead .intro { color: var(--navy); font-weight: 600; }
-  .band-navy .lead .intro { color: var(--white); }
-  .band-navy .muted { color: #9FAAB9; }
+  .sec-lead { text-align: center; max-width: 70ch; margin: 0 auto 12px; font-size: 18px; }
 
-  /* złota kreska ozdobna pod nagłówkiem */
-  .rule { width: 64px; height: 2px; background: var(--gold); margin: 0 0 28px; }
-  .center .rule { margin-left: auto; margin-right: auto; }
-  .center { text-align: center; }
-  .center .lead, .center .h2 { margin-left: auto; margin-right: auto; }
+  /* --- przyciski --- */
+  .btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: var(--gold); color: #10203A;
+    font-family: 'Source Sans 3', sans-serif; font-weight: 700;
+    font-size: 13.5px; letter-spacing: .16em; text-transform: uppercase;
+    padding: 17px 30px; border: 0; border-radius: var(--r); cursor: pointer;
+    transition: background-color .2s ease, transform .2s ease;
+  }
+  .btn::after { content: "→"; font-size: 16px; letter-spacing: 0; transition: transform .2s ease; }
+  .btn:hover { background: var(--gold-lt); color: #10203A; transform: translateY(-2px); }
+  .btn:hover::after { transform: translateX(4px); }
+  .btn--ghost {
+    background: transparent; color: var(--gold-lt);
+    box-shadow: inset 0 0 0 1px var(--gold);
+  }
+  .btn--ghost:hover { background: rgba(214,169,74,.12); color: #fff; }
 
-  /* ===== Nagłówek ===== */
+  /* --- nagłówek strony --- */
   .site-header {
     position: sticky; top: 0; z-index: 60;
-    background: rgba(255,255,255,.97); backdrop-filter: blur(6px);
-    border-bottom: 1px solid var(--border);
+    background: rgba(6,16,32,.92); backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255,255,255,.07);
   }
-  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 88px; gap: 24px; }
-  .logo img { height: 52px; width: auto; display: block; }
-  .nav { display: flex; gap: 26px; align-items: center; }
-  .nav a { text-decoration: none; color: #1A2130; font-weight: 500; font-size: 15.5px; }
-  .nav a:hover { color: var(--gold-deep); }
+  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 86px; gap: 24px; }
+  .logo img { height: 48px; width: auto; display: block; }
+  .nav { display: flex; gap: 30px; align-items: center; }
+  .nav a:not(.btn) {
+    color: var(--text); font-size: 14px; font-weight: 500; letter-spacing: .06em;
+    position: relative; padding: 6px 0;
+  }
+  .nav a:not(.btn)::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
+    background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .25s ease;
+  }
+  .nav a:not(.btn):hover::after { transform: scaleX(1); }
+  .nav .btn { padding: 13px 22px; font-size: 12px; }
   .nav-toggle { display: none; }
-  @media (max-width: 1000px) {
+  @media (max-width: 1040px) {
     .nav-toggle {
       display: flex; flex-direction: column; justify-content: center; gap: 5px;
-      width: 46px; height: 46px; padding: 10px; cursor: pointer;
-      background: none; border: 1px solid var(--border); border-radius: var(--r);
+      width: 46px; height: 46px; padding: 11px; cursor: pointer;
+      background: none; border: 1px solid var(--navy-600); border-radius: var(--r);
     }
-    .nav-toggle span { display: block; height: 2px; background: var(--navy); transition: transform .2s, opacity .2s; }
-    .nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle span { display: block; height: 1.5px; background: var(--gold); transition: transform .2s, opacity .2s; }
+    .nav-open .nav-toggle span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
     .nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
-    .nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
     .nav {
       display: none; position: absolute; left: 0; right: 0; top: 100%;
       flex-direction: column; align-items: stretch; gap: 0;
-      background: var(--white); border-bottom: 1px solid var(--border);
-      padding: 8px 24px 20px; box-shadow: 0 12px 24px rgba(10,27,51,.1);
+      background: var(--navy-900); border-bottom: 1px solid var(--line);
+      padding: 10px 28px 24px;
     }
     .nav-open .nav { display: flex; }
-    .nav a:not(.btn) { padding: 14px 4px; border-bottom: 1px solid var(--cream); font-size: 17px; }
-    .nav .btn { margin-top: 16px; text-align: center; }
+    .nav a:not(.btn) { padding: 15px 0; border-bottom: 1px solid rgba(255,255,255,.07); font-size: 16px; }
+    .nav .btn { margin-top: 18px; justify-content: center; }
   }
 
-  /* ===== Przyciski ===== */
-  .btn {
-    display: inline-block; font-family: 'Source Sans 3', sans-serif;
-    font-weight: 600; font-size: 16px; letter-spacing: .02em;
-    background: var(--gold); color: var(--navy-deep);
-    padding: 16px 32px; border-radius: var(--r); border: 0; cursor: pointer;
-    text-decoration: none; transition: background-color .18s ease, box-shadow .18s ease;
-    box-shadow: 0 6px 20px rgba(0,0,0,.22);
-  }
-  .btn:hover { background: var(--gold-light); color: var(--navy-deep); box-shadow: 0 8px 24px rgba(0,0,0,.28); }
-  .btn--outline { background: transparent; color: var(--navy); box-shadow: inset 0 0 0 1.5px var(--navy); }
-  .btn--outline:hover { background: var(--navy); color: var(--white); }
-  .band-navy .btn--outline { color: var(--white); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.7); }
-  .band-navy .btn--outline:hover { background: rgba(255,255,255,.1); color: var(--white); }
-  .nav .btn { padding: 13px 24px; font-size: 15px; }
-  .btn--lg { font-size: 17.5px; padding: 19px 40px; }
-  .link-arrow {
-    display: inline-flex; align-items: center; gap: 8px;
-    color: var(--gold-light); font-weight: 600; font-size: 16.5px;
-    text-decoration: none; border-bottom: 1px solid rgba(227,197,103,.45);
-    padding-bottom: 3px;
-  }
-  .link-arrow::after { content: "\2192"; transition: transform .18s ease; }
-  .link-arrow:hover { color: var(--white); border-bottom-color: var(--white); }
-  .link-arrow:hover::after { transform: translateX(3px); }
-
-  /* ===== Hero ===== */
+  /* --- HERO --- */
   .hero {
-    background: linear-gradient(140deg, var(--navy) 0%, var(--navy-soft) 55%, var(--navy-deep) 100%);
-    color: #DDE3EC; padding: 72px 0 84px; position: relative; overflow: hidden;
+    padding: 118px 0 126px; overflow: hidden;
+    background: var(--navy-900);
   }
-  /* tło hero: subtelna siatka + ciepła poświata w prawym dolnym narożniku */
+  /* warstwa 1: zdjęcie architektury, wtopione w granat */
+  .hero-photo {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("hero-budynki.webp");
+    background-size: cover; background-position: 62% 42%;
+    opacity: .5;
+    filter: saturate(.5) contrast(1.05);
+    /* zdjęcie wygasza się ku lewej i ku dołowi, żeby tekst leżał na czystym granacie */
+    mask-image: linear-gradient(100deg, transparent 6%, rgba(0,0,0,.35) 32%, #000 68%);
+    -webkit-mask-image: linear-gradient(100deg, transparent 6%, rgba(0,0,0,.35) 32%, #000 68%);
+  }
+  /* warstwa 2: granatowe przyciemnienie i zlota poświata */
   .hero::before {
-    content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
-    background-image:
-      linear-gradient(rgba(201,162,39,.055) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(201,162,39,.055) 1px, transparent 1px);
-    background-size: 64px 64px;
-    mask-image: radial-gradient(120% 100% at 88% 100%, #000 0%, transparent 70%);
-    -webkit-mask-image: radial-gradient(120% 100% at 88% 100%, #000 0%, transparent 70%);
+    content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background:
+      linear-gradient(95deg, #061020 12%, rgba(6,16,32,.92) 34%, rgba(10,27,51,.62) 58%, rgba(10,27,51,.42) 100%),
+      radial-gradient(60% 70% at 78% 30%, rgba(214,169,74,.16) 0%, transparent 62%),
+      linear-gradient(180deg, transparent 55%, rgba(6,16,32,.85) 100%);
   }
+  /* warstwa 3: subtelna siatka okien, spina zdjęcie z resztą strony */
   .hero::after {
-    content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
-    background: radial-gradient(90% 70% at 95% 100%, rgba(201,162,39,.15) 0%, transparent 62%);
+    content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background-image:
+      linear-gradient(rgba(214,169,74,.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(214,169,74,.05) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: radial-gradient(70% 80% at 82% 34%, #000 0%, transparent 70%);
+    -webkit-mask-image: radial-gradient(70% 80% at 82% 34%, #000 0%, transparent 70%);
   }
-  /* cienka złota linia zamykająca sekcję */
-  .hero { border-bottom: 2px solid var(--gold); }
-  .hero-inner { position: relative; z-index: 2; max-width: 780px; }
-  .hero .h1 { color: var(--white); }
-  .hero .h1 .gold { color: var(--gold-light); }
-  .hero .lead { color: #CFD8E4; font-size: 18.5px; max-width: 58ch; }
-  .hero-cta { margin-top: 36px; display: flex; gap: 28px; flex-wrap: wrap; align-items: center; position: relative; z-index: 2; }
-  .hero-note { font-size: 15px; color: #9FAAB9; margin-top: 20px; max-width: 56ch; }
-
-
-  /* ===== Etapy procesu ===== */
-  .stages { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 44px; }
-  .stage {
-    background: var(--white); border: 1px solid var(--border); border-radius: var(--r);
-    padding: 32px;
+  .hero .wrap { position: relative; z-index: 2; }
+  .hero-inner { max-width: 640px; }
+  .h1 { font-size: clamp(40px, 5.4vw, 62px); line-height: 1.14; margin-bottom: 0; }
+  .h1 em { font-style: normal; color: var(--gold); }
+  .hero .rule { margin: 30px 0 30px; }
+  .hero-lead { font-size: 18px; max-width: 52ch; }
+  .hero-cta { margin-top: 34px; display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
+  .hero-claim {
+    margin-top: 54px; display: flex; align-items: center; gap: 18px;
+    padding-top: 30px; border-top: 1px solid rgba(255,255,255,.09); max-width: 560px;
   }
-  .stage .no {
-    display: inline-block; margin-bottom: 14px; padding: 5px 12px;
-    font-family: 'Source Sans 3', sans-serif; font-size: 12px; font-weight: 700;
-    letter-spacing: .16em; text-transform: uppercase;
-    color: var(--white); background: var(--navy); border-radius: 3px;
+  .hero-claim svg { flex: none; color: var(--gold); }
+  .hero-claim p { margin: 0; color: var(--text); font-size: 16.5px; line-height: 1.6; }
+
+  /* --- karty z ikonami --- */
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 46px; }
+  .card {
+    background: rgba(255,255,255,.02); border: 1px solid var(--navy-600);
+    border-radius: var(--r); padding: 38px 28px 32px; text-align: center;
+    transition: border-color .25s ease, transform .25s ease, background-color .25s ease;
   }
-  .stage h3 { font-size: 22px; margin-bottom: 10px; }
-  .stage p { font-size: 16.5px; color: #3A4250; margin: 0; }
-
-  /* ===== Obszary finansowania ===== */
-  .areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 44px; }
-  .area { border-top: 3px solid var(--gold); padding-top: 20px; }
-  .band-navy .area p { color: #A9B4C2; }
-  .area h3 { font-size: 20px; margin-bottom: 8px; }
-  .area p { font-size: 16px; color: var(--gray); margin: 0; }
-
-  /* ===== Wyróżniki ===== */
-  .usp { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; margin-top: 44px; }
-  .usp-item {
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: var(--r); padding: 30px 32px;
+  .card:hover { border-color: var(--gold); transform: translateY(-5px); background: rgba(214,169,74,.05); }
+  .card-ico { color: var(--gold); margin-bottom: 20px; display: flex; justify-content: center; }
+  .card h3 { font-size: 21px; margin-bottom: 12px; }
+  .card p { font-size: 15.5px; margin: 0; }
+  .card .step-no {
+    display: block; font-size: 12px; letter-spacing: .28em; color: var(--gold);
+    text-transform: uppercase; margin-bottom: 10px;
   }
-  .usp-item h3 { color: var(--navy); }
-  .usp-item h3 { font-size: 21px; margin-bottom: 8px; }
-  .usp-item p { margin: 0; }
 
-  /* ===== Dla kogo ===== */
-  .fit { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 44px; }
-  .fit-box { background: var(--white); border: 1px solid var(--border); border-radius: var(--r); padding: 32px; }
-  .fit-box--no { background: var(--cream); }
-  .fit-box h3 { font-size: 21px; }
-  .fit-box ul { margin: 16px 0 0; padding: 0; list-style: none; }
-  .fit-box li { padding: 9px 0 9px 30px; position: relative; font-size: 16.5px; }
-  .fit-box li + li { border-top: 1px solid var(--border); }
+  /* --- obszary finansowania: lista dwukolumnowa z hairline --- */
+  .areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 46px; }
+  .area {
+    padding: 30px 28px; border: 1px solid rgba(255,255,255,.07); margin: -0.5px;
+    transition: background-color .25s ease, border-color .25s ease;
+  }
+  .area:hover { background: rgba(214,169,74,.05); border-color: var(--gold); }
+  .area h3 { font-size: 19px; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+  .area h3 svg { color: var(--gold); flex: none; }
+  .area p { font-size: 15px; margin: 0; }
+
+  /* --- dlaczego my: lewa kolumna + siatka 2×2 --- */
+  .why { display: grid; grid-template-columns: 340px minmax(0,1fr); gap: 64px; align-items: start; }
+  .why-head .h2 { text-align: left; margin-bottom: 0; }
+  .why-head .eyebrow { text-align: left; }
+  .why-head .rule { margin: 24px 0 26px; }
+  .why-head .rule::before { left: 0; transform: rotate(45deg); }
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 38px 44px; }
+  .why-item { display: grid; grid-template-columns: 42px minmax(0,1fr); gap: 18px; }
+  .why-item svg { color: var(--gold); margin-top: 2px; }
+  .why-item h3 { font-size: 19px; margin-bottom: 6px; }
+  .why-item p { font-size: 15.5px; margin: 0; }
+
+  /* --- proces: numerowana oś --- */
+  .process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 54px; position: relative; }
+  .process::before {
+    content: ""; position: absolute; top: 27px; left: 12%; right: 12%; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--line) 12%, var(--line) 88%, transparent);
+  }
+  .step { text-align: center; position: relative; }
+  .step-circle {
+    width: 56px; height: 56px; margin: 0 auto 22px; border-radius: 50%;
+    background: var(--navy-800); border: 1px solid var(--gold);
+    display: flex; align-items: center; justify-content: center; color: var(--gold);
+    position: relative; z-index: 2; transition: background-color .25s ease, color .25s ease;
+  }
+  .step:hover .step-circle { background: var(--gold); color: #10203A; }
+  .step-num {
+    position: absolute; top: -6px; left: 50%; transform: translateX(-50%) translateX(-38px);
+    width: 24px; height: 24px; border-radius: 50%; background: var(--gold); color: #10203A;
+    font-family: 'Source Sans 3', sans-serif; font-size: 12.5px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; z-index: 3;
+  }
+  .step h3 { font-size: 19px; margin-bottom: 8px; }
+  .step p { font-size: 15px; margin: 0; }
+
+  /* --- dla kogo --- */
+  .fit { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 46px; }
+  .fit-box { border: 1px solid var(--navy-600); border-radius: var(--r); padding: 36px 34px; }
+  .fit-box--yes { background: rgba(214,169,74,.05); border-color: var(--line); }
+  .fit-box h3 { font-size: 21px; margin-bottom: 18px; }
+  .fit-box ul { margin: 0; padding: 0; list-style: none; }
+  .fit-box li { padding: 10px 0 10px 32px; position: relative; font-size: 16px; }
+  .fit-box li + li { border-top: 1px solid rgba(255,255,255,.06); }
   .fit-box--yes li::before {
-    content: ""; position: absolute; left: 2px; top: 16px;
-    width: 14px; height: 8px; border-left: 2px solid var(--gold); border-bottom: 2px solid var(--gold);
-    transform: rotate(-45deg);
+    content: ""; position: absolute; left: 4px; top: 19px; width: 13px; height: 7px;
+    border-left: 1.5px solid var(--gold); border-bottom: 1.5px solid var(--gold); transform: rotate(-45deg);
   }
   .fit-box--no li::before {
-    content: ""; position: absolute; left: 2px; top: 19px;
-    width: 13px; height: 2px; background: var(--gray);
+    content: ""; position: absolute; left: 4px; top: 22px; width: 12px; height: 1.5px; background: #6B7A8D;
   }
-  .fit-note { margin-top: 28px; font-family: 'Cormorant Garamond', serif; font-size: 21px; max-width: 60ch; }
+  .fit-note { text-align: center; margin-top: 36px; font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--text); }
 
-  /* ===== Kroki współpracy ===== */
-  .steps { counter-reset: s; margin: 44px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
-  .steps li { counter-increment: s; }
-  .steps li::before {
-    content: counter(s);
-    display: flex; align-items: center; justify-content: center;
-    width: 48px; height: 48px; margin-bottom: 18px;
-    background: var(--navy); border-radius: 50%;
-    font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 700; color: var(--gold-light);
-  }
-  .steps h3 { font-size: 20px; margin-bottom: 8px; }
-  .steps p { font-size: 16.5px; margin: 0; }
-
-  /* ===== Zespół ===== */
-  .team { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 48px; }
+  /* --- zespół --- */
+  .team { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 46px; }
   .person {
-    background: var(--white); border: 1px solid var(--border); border-radius: var(--r);
-    overflow: hidden; display: grid; grid-template-columns: 210px minmax(0,1fr);
+    border: 1px solid var(--navy-600); border-radius: var(--r); overflow: hidden;
+    display: grid; grid-template-columns: 200px minmax(0,1fr);
+    transition: border-color .25s ease;
   }
-  .band-navy .person { background: rgba(255,255,255,.05); border-color: rgba(201,162,39,.28); }
-  .band-navy .person h3 { color: var(--white); }
-  .band-navy .person .role { color: var(--gold-light); }
-  .band-navy .person .contact a { color: #D5DDE8; }
-  .band-navy .person .contact a:hover { color: var(--gold-light); }
-  .person img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .person-body { padding: 28px; }
-  .person h3 { font-size: 23px; margin-bottom: 4px; }
-  .person .role { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 16px; }
-  .person .contact { margin: 0; font-size: 16px; line-height: 2; }
-  .person .contact a { text-decoration: none; }
-  .person .contact a:hover { text-decoration: underline; }
+  .person:hover { border-color: var(--gold); }
+  .person img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.85) contrast(1.05); }
+  .person-body { padding: 30px 28px; }
+  .person h3 { font-size: 22px; margin-bottom: 4px; }
+  .person .role { font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+  .person .bio { font-size: 15px; margin-bottom: 16px; }
+  .person .contact { margin: 0; font-size: 15px; line-height: 1.9; }
+  .person .contact a { color: var(--text); }
+  .person .contact a:hover { color: var(--gold-lt); }
 
-  /* ===== FAQ ===== */
-  .faq { max-width: 880px; margin: 44px auto 0; }
-  .faq details { border-bottom: 1px solid var(--border); }
+  /* --- blog --- */
+  .posts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 46px; }
+  .post {
+    border: 1px solid var(--navy-600); border-radius: var(--r); padding: 32px 28px;
+    display: flex; flex-direction: column; transition: border-color .25s ease, transform .25s ease;
+  }
+  .post:hover { border-color: var(--gold); transform: translateY(-4px); }
+  .post .cat { font-size: 11.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+  .post h3 { font-size: 21px; line-height: 1.3; margin-bottom: 12px; }
+  .post h3 a { color: #fff; }
+  .post h3 a:hover { color: var(--gold-lt); }
+  .post p { font-size: 15.5px; }
+  .post .more { margin-top: auto; padding-top: 12px; font-size: 14px; letter-spacing: .06em; }
+
+  /* --- FAQ --- */
+  .faq { max-width: 860px; margin: 46px auto 0; }
+  .faq details { border-bottom: 1px solid rgba(255,255,255,.09); }
   .faq summary {
-    cursor: pointer; list-style: none; padding: 24px 4px;
+    cursor: pointer; list-style: none; padding: 26px 4px;
     display: flex; justify-content: space-between; align-items: center; gap: 24px;
-    font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 600;
-    text-align: left;
+    font-family: 'Cormorant Garamond', serif; font-size: 21px; color: #fff;
+    transition: color .2s ease;
   }
+  .faq summary:hover { color: var(--gold-lt); }
   .faq summary::-webkit-details-marker { display: none; }
-  .faq summary::after { content: "+"; font-family: 'Source Sans 3', sans-serif; font-size: 26px; font-weight: 300; color: var(--gold-deep); flex: none; transition: transform .2s; }
+  .faq summary::after { content: "+"; font-family: 'Source Sans 3', sans-serif; font-size: 24px; font-weight: 300; color: var(--gold); flex: none; transition: transform .2s ease; }
   .faq details[open] summary::after { transform: rotate(45deg); }
-  .faq details p { padding: 0 4px 26px; margin: 0; color: #3A4250; text-align: left; max-width: 70ch; }
+  .faq details p { padding: 0 4px 26px; margin: 0; max-width: 76ch; }
 
-  /* ===== Blog na stronie głównej ===== */
-  .posts-home { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 44px; }
-  .post-card {
-    background: var(--white); border: 1px solid var(--border); border-radius: var(--r);
-    padding: 30px; display: flex; flex-direction: column;
-  }
-  .post-card .cat {
-    display: inline-block; align-self: flex-start; margin-bottom: 14px; padding: 5px 12px;
-    font-size: 11.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
-    color: var(--white); background: var(--navy); border-radius: 3px;
-  }
-  .post-card h3 { font-size: 21px; line-height: 1.3; margin-bottom: 10px; }
-  .post-card h3 a { color: var(--navy); text-decoration: none; }
-  .post-card h3 a:hover { color: var(--gold-deep); }
-  .post-card p { font-size: 16px; color: #3A4250; }
-  .post-card .more { margin-top: auto; padding-top: 12px; font-size: 15.5px; }
-  @media (max-width: 1000px) { .posts-home { grid-template-columns: 1fr; } }
-
-  /* ===== Kontakt ===== */
-  .contact-grid { display: grid; grid-template-columns: minmax(0,1fr) 460px; gap: 64px; align-items: start; margin-top: 44px; }
-  .form { background: var(--white); border-radius: var(--r); padding: 34px; box-shadow: 0 18px 40px rgba(0,0,0,.28); }
-  .form label { display: block; font-weight: 600; font-size: 13.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--gray); margin: 20px 0 8px; }
+  /* --- kontakt --- */
+  .contact-grid { display: grid; grid-template-columns: minmax(0,1fr) 480px; gap: 72px; align-items: start; margin-top: 46px; }
+  .contact-grid .h2, .contact-grid .eyebrow, .contact-grid .rule { text-align: left; margin-left: 0; }
+  .contact-grid .rule { margin: 22px 0 28px; }
+  .contact-grid .rule::before { left: 0; transform: rotate(45deg); }
+  .direct { margin-top: 34px; display: grid; gap: 22px; }
+  .direct-item { padding-left: 20px; border-left: 1px solid var(--line); }
+  .direct-item .who { color: #fff; font-weight: 600; display: block; }
+  .direct-item .role { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+  .direct-item a { color: var(--text); display: inline-block; margin-top: 4px; }
+  .direct-item a:hover { color: var(--gold-lt); }
+  .form { background: var(--navy-700); border: 1px solid var(--navy-600); border-radius: var(--r); padding: 40px 36px; }
+  .form label { display: block; font-size: 11.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin: 22px 0 8px; }
   .form label:first-of-type { margin-top: 0; }
-  .form input, .form textarea, .form select {
-    width: 100%; font: inherit; font-size: 16px; padding: 13px 14px;
-    border: 1px solid var(--border); border-radius: var(--r); background: var(--white);
+  .form input, .form textarea {
+    width: 100%; font: inherit; font-size: 16px; color: var(--text);
+    padding: 14px 16px; background: rgba(255,255,255,.03);
+    border: 1px solid var(--navy-600); border-radius: var(--r);
   }
-  .form textarea { min-height: 110px; resize: vertical; }
-  .form .btn { width: 100%; margin-top: 26px; }
-  .form .consent { display: flex; gap: 12px; align-items: flex-start; margin-top: 22px; }
-  .form .consent input { width: 18px; height: 18px; flex: none; margin-top: 4px; accent-color: var(--gold-deep); }
-  .form .consent label { margin: 0; text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 13.5px; color: var(--gray); line-height: 1.5; }
-  .form-msg { margin: 22px 0 0; padding: 16px 18px; border-radius: var(--r); font-size: 15.5px; }
-  .form-msg--ok { background: var(--cream); border-left: 3px solid var(--gold); }
-  .form-msg--err { background: #FBEDEA; border-left: 3px solid #B4452F; }
-  .contact-direct { margin-top: 32px; }
-  .contact-direct .who { font-weight: 600; }
-  .contact-direct p { margin-bottom: 12px; }
+  .form input::placeholder, .form textarea::placeholder { color: #6B7A8D; }
+  .form input:focus, .form textarea:focus { border-color: var(--gold); outline: none; }
+  .form textarea { min-height: 118px; resize: vertical; }
+  .form .btn { width: 100%; justify-content: center; margin-top: 30px; }
+  .form .consent { display: flex; gap: 12px; align-items: flex-start; margin-top: 24px; }
+  .form .consent input { width: 17px; height: 17px; flex: none; margin-top: 4px; accent-color: var(--gold); }
+  .form .consent label { margin: 0; font-size: 13px; letter-spacing: 0; text-transform: none; font-weight: 400; color: var(--text-dim); line-height: 1.6; }
+  .form-msg { margin: 24px 0 0; padding: 16px 18px; border-radius: var(--r); font-size: 15px; }
+  .form-msg--ok { background: rgba(214,169,74,.1); border-left: 2px solid var(--gold); color: var(--text); }
+  .form-msg--err { background: rgba(180,69,47,.14); border-left: 2px solid #B4452F; color: var(--text); }
 
-  /* ===== Stopka ===== */
-  .site-footer { background: var(--navy-deep); color: #9FAAB9; padding: 72px 0 36px; font-size: 15.5px; }
-  .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 48px; }
-  .site-footer h3 { font-size: 17px; color: var(--white); margin-bottom: 14px; }
-  .site-footer a { color: #C6CEDA; text-decoration: none; }
-  .site-footer a:hover { color: var(--gold-light); }
-  .site-footer img { height: auto; width: 250px; max-width: 100%; display: block; margin-bottom: 22px; }
-  .site-footer ul { margin: 0; padding: 0; list-style: none; line-height: 2; }
+  /* --- stopka --- */
+  .site-footer { background: var(--navy-900); padding: 76px 0 40px; font-size: 15px; border-top: 1px solid var(--line); }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 56px; }
+  .site-footer img { width: 230px; height: auto; max-width: 100%; display: block; margin-bottom: 22px; }
+  .site-footer h3 { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); font-family: 'Source Sans 3', sans-serif; font-weight: 600; margin-bottom: 16px; }
+  .site-footer ul { margin: 0; padding: 0; list-style: none; line-height: 2.1; }
+  .site-footer a { color: var(--text-dim); }
+  .site-footer a:hover { color: var(--gold-lt); }
   .footer-bottom {
-    margin-top: 48px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,.12);
-    display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px;
+    margin-top: 54px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,.08);
+    display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; font-size: 13.5px; color: #7C8A9C;
   }
-  .footer-ai { margin-top: 14px; font-size: 13px; color: #7C8695; }
+  .footer-ai { margin-top: 14px; font-size: 12.5px; color: #5E6C7E; }
 
-  /* ===== Responsywność ===== */
-  @media (max-width: 1000px) {
-    section { padding: 68px 0; }
-    .hero { padding: 72px 0 80px; }
-    .areas, .steps { grid-template-columns: 1fr 1fr; }
-    .contact-grid, .team { grid-template-columns: 1fr; }
+  /* --- animacje wejścia --- */
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .reveal-d1 { transition-delay: .07s } .reveal-d2 { transition-delay: .14s }
+  .reveal-d3 { transition-delay: .21s } .reveal-d4 { transition-delay: .28s }
+  .reveal-d5 { transition-delay: .35s } .reveal-d6 { transition-delay: .42s }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1 !important; transform: none !important; } }
+
+  /* --- responsywność --- */
+  @media (max-width: 1040px) {
+    section { padding: 72px 0; }
+    .hero { padding: 68px 0 76px; }
+    .hero-photo { opacity: .3; background-position: 70% 40%;
+      mask-image: linear-gradient(180deg, transparent 0%, #000 55%);
+      -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 55%); }
+    .cards, .process { grid-template-columns: 1fr 1fr; }
+    .process::before { display: none; }
+    .areas { grid-template-columns: 1fr 1fr; }
+    .why { grid-template-columns: 1fr; gap: 36px; }
+    .contact-grid { grid-template-columns: 1fr; gap: 44px; }
+    .team, .posts { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 680px) {
-    .stages, .areas, .steps, .usp, .fit, .footer-grid { grid-template-columns: 1fr; }
+    .cards, .process, .areas, .fit, .why-grid, .footer-grid { grid-template-columns: 1fr; }
     .person { grid-template-columns: 1fr; }
-    .person img { max-height: 320px; }
-  }
-
-  /* ============================================================
-     ANIMACJE I PRZEJŚCIA
-     Zasada: subtelnie i szybko (0,2–0,6 s). Wszystko wyłącza się
-     przy systemowym ustawieniu ograniczonego ruchu.
-  ============================================================= */
-
-  /* --- 1. Wejście sekcji przy przewijaniu --- */
-  .reveal { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s ease; }
-  .reveal.in { opacity: 1; transform: none; }
-  .reveal-d1 { transition-delay: .08s; }
-  .reveal-d2 { transition-delay: .16s; }
-  .reveal-d3 { transition-delay: .24s; }
-  .reveal-d4 { transition-delay: .32s; }
-  .reveal-d5 { transition-delay: .40s; }
-  .reveal-d6 { transition-delay: .48s; }
-
-  /* --- 2. Karty: uniesienie i złota krawędź --- */
-  .stage, .usp-item, .fit-box, .post-card, .post, .value, .person {
-    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-  }
-  .stage:hover, .usp-item:hover, .fit-box:hover, .post-card:hover, .post:hover, .value:hover {
-    transform: translateY(-4px);
-    border-color: var(--gold);
-    box-shadow: 0 14px 32px rgba(10,27,51,.12);
-  }
-  .band-navy .usp-item:hover, .band-navy .person:hover {
-    border-color: var(--gold);
-    box-shadow: 0 14px 32px rgba(0,0,0,.35);
-  }
-
-  /* --- 3. Obszary finansowania: złota kreska rozjeżdża się na hover --- */
-  .area { border-top: 0; padding-top: 20px; position: relative; }
-  .area::before {
-    content: ""; position: absolute; top: 0; left: 0; height: 3px; width: 42px;
-    background: var(--gold); transition: width .35s cubic-bezier(.2,.7,.3,1);
-  }
-  .area:hover::before { width: 100%; }
-  .area h3 { transition: color .25s ease; }
-  .area:hover h3 { color: var(--gold-light); }
-
-  /* --- 4. Numery etapów i kroków: puls koloru na hover --- */
-  .stage:hover .no { background: var(--gold); color: var(--navy-deep); }
-  .stage .no { transition: background-color .25s ease, color .25s ease; }
-  .steps li { transition: transform .25s ease; }
-  .steps li:hover { transform: translateY(-3px); }
-  .steps li::before { transition: background-color .25s ease, color .25s ease, transform .25s ease; }
-  .steps li:hover::before { background: var(--gold); color: var(--navy-deep); transform: scale(1.06); }
-
-  /* --- 5. Zdjęcia zespołu: delikatne przybliżenie --- */
-  .person img, .profile-photo img { transition: transform .5s cubic-bezier(.2,.7,.3,1); }
-  .person:hover img, .profile-photo:hover img { transform: scale(1.04); }
-  .person, .profile-photo { overflow: hidden; }
-
-  /* --- 6. Nawigacja: złota kreska wysuwa się pod linkiem --- */
-  .nav a:not(.btn) { position: relative; }
-  .nav a:not(.btn)::after {
-    content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px;
-    background: var(--gold); transform: scaleX(0); transform-origin: left;
-    transition: transform .25s ease;
-  }
-  .nav a:not(.btn):hover::after { transform: scaleX(1); }
-  @media (max-width: 1000px) { .nav a:not(.btn)::after { display: none; } }
-
-  /* --- 7. Przycisk główny: subtelny podnośnik + przesuwający się blask --- */
-  .btn { position: relative; overflow: hidden; }
-  .btn:hover { transform: translateY(-2px); }
-  .btn::after {
-    content: ""; position: absolute; top: 0; left: -60%; width: 40%; height: 100%;
-    background: linear-gradient(100deg, transparent, rgba(255,255,255,.45), transparent);
-    transform: skewX(-18deg); transition: left .55s ease;
-  }
-  .btn:hover::after { left: 120%; }
-
-  /* --- 8. FAQ: płynne rozwijanie odpowiedzi --- */
-  .faq details p { animation: faqIn .3s ease both; }
-  @keyframes faqIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
-  .faq summary { transition: color .2s ease; }
-  .faq summary:hover { color: var(--gold-deep); }
-
-  /* --- 9. Linki tekstowe ze strzałką: strzałka odjeżdża --- */
-  .post-card .more a, .post .more a, .posts-all a { position: relative; transition: color .2s ease; }
-
-  /* --- 10. Wskaźnik postępu czytania (tylko artykuły) --- */
-  .progress {
-    position: fixed; top: 0; left: 0; height: 3px; width: 0;
-    background: var(--gold); z-index: 100; transition: width .1s linear;
-  }
-
-  /* --- 11. Logo w nagłówku: minimalne przygaszenie na hover --- */
-  .logo img { transition: opacity .2s ease, transform .3s ease; }
-  .logo:hover img { opacity: .85; }
-
-  /* --- Poszanowanie ustawień dostępności --- */
-  @media (prefers-reduced-motion: reduce) {
-    .reveal { opacity: 1 !important; transform: none !important; }
-    .btn::after { display: none; }
+    .person img { max-height: 300px; }
+    .step-num { transform: translateX(-50%) translateX(-34px); }
   }
 </style>
+
 </head>
 <body>
-
-<a class="btn" href="#tresc" style="position:absolute;left:16px;top:-60px;z-index:100;" onfocus="this.style.top='12px'" onblur="this.style.top='-60px'">Przejdź do treści</a>
 
 <header class="site-header">
   <div class="wrap">
@@ -546,125 +491,186 @@
   </div>
 </header>
 
-<main id="top"><span id="tresc"></span>
+<main id="top">
 
 <!-- ================= HERO ================= -->
 <section class="hero">
-  <div class="wrap hero-inner">
-    <span class="label">Dotacje i pożyczki unijne dla firm</span>
-    <h1 class="h1">Kapitał na rozwój Państwa firmy.<br><span class="gold">Bez walki z formalnościami.</span></h1>
-    <p class="lead">Automatyzacja, nowe maszyny, transformacja energetyczna, ekspansja – na te cele istnieją dotacje i pożyczki unijne na preferencyjnych warunkach. Dobieramy program, przygotowujemy dokumentację i prowadzimy proces od pierwszej rozmowy po rozliczenie.</p>
-    <div class="hero-cta">
-      <a class="btn btn--lg" href="#kontakt">Zamów bezpłatną analizę</a>
-      <a class="link-arrow" href="#co-robimy">Zobacz, jak działamy</a>
+  <div class="hero-photo" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow" style="text-align:left;">Dotacje i pożyczki unijne dla firm</span>
+      <h1 class="h1">Kapitał na rozwój<br>Państwa firmy.<br><em>Bez walki z formalnościami.</em></h1>
+      <div class="rule"></div>
+      <p class="hero-lead">Automatyzacja, nowe maszyny, transformacja energetyczna, ekspansja – na te cele istnieją dotacje i pożyczki unijne na preferencyjnych warunkach. Dobieramy program, przygotowujemy dokumentację i prowadzimy proces od pierwszej rozmowy po rozliczenie.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#kontakt">Zamów bezpłatną analizę</a>
+        <a class="btn btn--ghost" href="#co-robimy">Zobacz, jak działamy</a>
+      </div>
+      <div class="hero-claim">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1.1" fill="currentColor"/></svg>
+        <p>Bezpłatna analiza możliwości finansowania – zanim zdecydują się Państwo na współpracę.</p>
+      </div>
     </div>
-    <p class="hero-note"><strong style="color:#E3C567;">Bezpłatna analiza możliwości finansowania</strong> – zanim zdecydują się Państwo na współpracę.</p>
-
   </div>
 </section>
 
 <!-- ================= CO ROBIMY ================= -->
-<section id="co-robimy">
+<section id="co-robimy" class="band-700">
   <div class="wrap">
-    <span class="label">Zakres wsparcia</span>
-    <h2 class="h2">Kompleksowa obsługa procesu – od pomysłu po rozliczenie</h2>
+    <span class="eyebrow">Zakres wsparcia</span>
+    <h2 class="h2">Kompleksowa obsługa procesu – <em>od pomysłu po rozliczenie</em></h2>
     <div class="rule"></div>
-    <p class="lead"><span class="intro">Pozyskanie dotacji lub pożyczki preferencyjnej to proces, który wymaga znajomości programów, procedur i języka instytucji finansujących.</span> Przejmujemy go w całości, tak aby zaangażowanie Państwa zespołu ograniczyć do <span class="mark">niezbędnego minimum</span>.</p>
-    <div class="stages">
-      <div class="stage">
-        <span class="no">Etap 1</span>
+    <p class="sec-lead">Pozyskanie dotacji lub pożyczki preferencyjnej to proces, który wymaga znajomości programów, procedur i języka instytucji finansujących. Przejmujemy go w całości, tak aby zaangażowanie Państwa zespołu ograniczyć do niezbędnego minimum.</p>
+    <div class="cards">
+      <div class="card">
+        <span class="card-ico"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <span class="step-no">Etap 1</span>
         <h3>Dobór programu finansowania</h3>
-        <p>Analizujemy plany inwestycyjne i sytuację firmy, a następnie wskazujemy instrument, który realnie odpowiada Państwa potrzebom: dotację, pożyczkę unijną na preferencyjnych warunkach lub program regionalny. <strong>Nie dopasowujemy inwestycji do konkursu na siłę.</strong> Jeśli projekt nie rokuje, mówimy o tym wprost.</p>
+        <p>Analizujemy plany inwestycyjne i sytuację firmy, a następnie wskazujemy instrument, który realnie odpowiada Państwa potrzebom. Nie dopasowujemy inwestycji do konkursu na siłę.</p>
       </div>
-      <div class="stage">
-        <span class="no">Etap 2</span>
-        <h3>Przygotowanie dokumentacji aplikacyjnej</h3>
-        <p>Opracowujemy wniosek o dofinansowanie wraz z wymaganymi załącznikami, analizami finansowymi i biznesplanem. Tłumaczymy cele biznesowe Państwa inwestycji na język wymogów instytucji finansujących.</p>
+      <div class="card">
+        <span class="card-ico"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></span>
+        <span class="step-no">Etap 2</span>
+        <h3>Przygotowanie dokumentacji</h3>
+        <p>Opracowujemy wniosek o dofinansowanie wraz z załącznikami, analizami finansowymi i biznesplanem. Tłumaczymy cele inwestycji na język wymogów instytucji finansujących.</p>
       </div>
-      <div class="stage">
-        <span class="no">Etap 3</span>
-        <h3>Kontakt z instytucją finansującą</h3>
-        <p>Prowadzimy korespondencję z instytucją, odpowiadamy na uwagi i uzupełnienia, pilnujemy terminów. Państwo otrzymują od nas informacje w zrozumiałej formie, bez urzędowego żargonu.</p>
+      <div class="card">
+        <span class="card-ico"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></span>
+        <span class="step-no">Etap 3</span>
+        <h3>Kontakt z instytucją</h3>
+        <p>Prowadzimy korespondencję, odpowiadamy na uwagi i uzupełnienia, pilnujemy terminów. Państwo otrzymują informacje w zrozumiałej formie, bez urzędowego żargonu.</p>
       </div>
-      <div class="stage">
-        <span class="no">Etap 4</span>
+      <div class="card">
+        <span class="card-ico"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"/><path d="M7 19V9M12 19V5M17 19v-7"/><path d="M4 4.5 20 4.5"/></svg></span>
+        <span class="step-no">Etap 4</span>
         <h3>Rozliczenie projektu</h3>
-        <p>Wspieramy firmę również po przyznaniu środków: w sprawozdawczości, dokumentowaniu wydatków i końcowym rozliczeniu, tak aby przyznane finansowanie było bezpieczne na każdym etapie realizacji.</p>
+        <p>Wspieramy firmę również po przyznaniu środków: w sprawozdawczości, dokumentowaniu wydatków i końcowym rozliczeniu, tak aby finansowanie było bezpieczne na każdym etapie.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ================= OBSZARY ================= -->
-<section id="obszary" class="band-navy">
+<section id="obszary">
   <div class="wrap">
-    <span class="label">Specjalizacje</span>
-    <h2 class="h2">W jakich obszarach pozyskujemy finansowanie?</h2>
+    <span class="eyebrow">Specjalizacje</span>
+    <h2 class="h2">W jakich obszarach <em>pozyskujemy finansowanie</em>?</h2>
     <div class="rule"></div>
-    <p class="lead"><span class="intro">Specjalizujemy się w projektach inwestycyjnych i rozwojowych, w szczególności dla firm produkcyjnych.</span> Najczęściej pozyskujemy środki na:</p>
+    <p class="sec-lead">Specjalizujemy się w projektach inwestycyjnych i rozwojowych, w szczególności dla firm produkcyjnych. Najczęściej pozyskujemy środki na:</p>
     <div class="areas">
       <div class="area">
-        <h3>Automatyzacja i robotyzacja w MŚP</h3>
+        <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M9 9V6h6v3M12 13v3"/></svg>Automatyzacja i robotyzacja w MŚP</h3>
         <p>Zakup robotów, linii technologicznych i systemów sterowania.</p>
       </div>
       <div class="area">
-        <h3>Maszyny i urządzenia produkcyjne</h3>
+        <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3"/><path d="M4 8h3M17 16h3M12 4v2M12 18v2"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>Maszyny i urządzenia produkcyjne</h3>
         <p>Rozbudowa parku maszynowego i zwiększenie mocy produkcyjnych.</p>
       </div>
       <div class="area">
-        <h3>Transformacja energetyczna</h3>
+        <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M13 3 5 14h6l-1 7 8-11h-6z"/></svg>Transformacja energetyczna</h3>
         <p>Inwestycje obniżające koszty energii i ślad węglowy przedsiębiorstwa.</p>
       </div>
       <div class="area">
-        <h3>Gospodarka o obiegu zamkniętym (GOZ)</h3>
+        <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M4 12a8 8 0 0 1 13.6-5.7M20 12a8 8 0 0 1-13.6 5.7"/><path d="M17 3v4h-4M7 21v-4h4"/></svg>Gospodarka o obiegu zamkniętym</h3>
         <p>Wdrażanie rozwiązań ograniczających odpady i ponowne wykorzystanie zasobów.</p>
       </div>
       <div class="area">
-        <h3>Wzornictwo w MŚP</h3>
+        <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V9l7-4v10z"/><path d="M12 9 5 5v10l7 4"/></svg>Wzornictwo w MŚP</h3>
         <p>Projektowanie i wdrażanie nowego designu produktów.</p>
       </div>
       <div class="area">
-        <h3>Ekspansja zagraniczna</h3>
+        <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4a13 13 0 0 1 0 16 13 13 0 0 1 0-16z"/></svg>Ekspansja zagraniczna</h3>
         <p>Wsparcie w wejściu na rynki eksportowe, w tym program Broker Eksportowy.</p>
       </div>
     </div>
-    <p class="muted" style="margin-top:36px; max-width:70ch;">Jeżeli planowana inwestycja nie mieści się w powyższych obszarach, zachęcamy do kontaktu. Dostępne programy zmieniają się w ciągu roku, a dobór instrumentu zawsze poprzedzamy indywidualną analizą.</p>
+    <p class="sec-lead" style="margin-top:36px; font-size:16px;">Jeżeli planowana inwestycja nie mieści się w powyższych obszarach, zachęcamy do kontaktu. Dostępne programy zmieniają się w ciągu roku, a dobór instrumentu zawsze poprzedzamy indywidualną analizą.</p>
   </div>
 </section>
 
 <!-- ================= DLACZEGO MY ================= -->
-<section class="band-cream">
-  <div class="wrap">
-    <span class="label">Dlaczego FC Consulting</span>
-    <h2 class="h2">Co nas wyróżnia?</h2>
-    <div class="rule"></div>
-    <div class="usp">
-      <div class="usp-item">
-        <h3>Analizujemy każdy projekt</h3>
-        <p><strong>Wiele firm doradczych podejmuje się wyłącznie dużych projektów.</strong> My wysłuchamy każdego przedsiębiorcy i rzetelnie ocenimy szanse na finansowanie, również przy mniejszych inwestycjach.</p>
+<section class="band-900">
+  <div class="wrap why">
+    <div class="why-head">
+      <span class="eyebrow">Dlaczego my?</span>
+      <h2 class="h2">Doświadczenie,<br>które <em>pracuje</em><br>na Państwa sukces</h2>
+      <div class="rule"></div>
+      <p style="font-size:16px;">Nie sprzedajemy każdego dostępnego konkursu. Rekomendujemy to, co ma realne szanse powodzenia.</p>
+      <p style="margin-top:26px;"><a class="btn btn--ghost" href="o-nas.html">Poznaj nas bliżej</a></p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6.5V12c0 5 3.4 8.2 8 9 4.6-.8 8-4 8-9V6.5z"/><path d="m9 12 2 2 4-4"/></svg>
+        <div>
+          <h3>Analizujemy każdy projekt</h3>
+          <p>Wiele firm doradczych podejmuje się wyłącznie dużych projektów. My wysłuchamy każdego przedsiębiorcy i rzetelnie ocenimy szanse, również przy mniejszych inwestycjach.</p>
+        </div>
       </div>
-      <div class="usp-item">
-        <h3>Doradzamy uczciwie</h3>
-        <p>Rekomendujemy wyłącznie rozwiązania, które są firmie faktycznie potrzebne i mają realne szanse powodzenia. Projekty, które nie rokują, <span class="mark">odrzucamy na starcie</span>, zanim zaczną kosztować Państwa czas i pieniądze.</p>
+      <div class="why-item">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4"/><path d="M6 4h12v5a6 6 0 0 1-12 0z"/><path d="M6 5H3v2a3 3 0 0 0 3 3M18 5h3v2a3 3 0 0 1-3 3"/></svg>
+        <div>
+          <h3>Doradzamy uczciwie</h3>
+          <p>Rekomendujemy wyłącznie rozwiązania faktycznie potrzebne firmie. Projekty, które nie rokują, odrzucamy na starcie, zanim zaczną kosztować Państwa czas i pieniądze.</p>
+        </div>
       </div>
-      <div class="usp-item">
-        <h3>Mówimy zrozumiałym językiem</h3>
-        <p>Procedury, wymogi formalne i korespondencję z instytucjami tłumaczymy na konkrety. Prowadzimy Państwa przez proces krok po kroku: <strong>wiedzą Państwo, co się dzieje i co będzie działo się dalej.</strong></p>
+      <div class="why-item">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10M4 12h16M4 17h7"/><path d="m17 15 3 2-3 2"/></svg>
+        <div>
+          <h3>Mówimy zrozumiałym językiem</h3>
+          <p>Procedury, wymogi formalne i korespondencję z instytucjami tłumaczymy na konkrety. Wiedzą Państwo, co się dzieje i co będzie działo się dalej.</p>
+        </div>
       </div>
-      <div class="usp-item">
-        <h3>Działamy w całej Polsce</h3>
-        <p>Współpracujemy w pełni online, a gdy sytuacja tego wymaga, przyjeżdżamy do siedziby firmy. <strong>Dojedziemy tam, gdzie jesteśmy potrzebni.</strong></p>
+      <div class="why-item">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.3 7-11a7 7 0 1 0-14 0c0 5.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <div>
+          <h3>Działamy w całej Polsce</h3>
+          <p>Współpracujemy w pełni online, a gdy sytuacja tego wymaga, przyjeżdżamy do siedziby firmy. Dojedziemy tam, gdzie jesteśmy potrzebni.</p>
+        </div>
       </div>
     </div>
-    <p style="margin-top:48px;"><a class="btn" href="#kontakt">Zamów bezpłatną analizę</a></p>
+  </div>
+</section>
+
+<!-- ================= PROCES ================= -->
+<section class="band-700">
+  <div class="wrap">
+    <span class="eyebrow">Jak pracujemy?</span>
+    <h2 class="h2">Prosty proces – <em>realne efekty</em></h2>
+    <div class="rule"></div>
+    <div class="process">
+      <div class="step">
+        <span class="step-num">1</span>
+        <div class="step-circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Kontakt</h3>
+        <p>Piszą lub dzwonią Państwo do nas i krótko opisują planowaną inwestycję.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <div class="step-circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg></div>
+        <h3>Rozmowa i analiza</h3>
+        <p>Zbieramy informacje o firmie i bezpłatnie weryfikujemy dostępne programy finansowania.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <div class="step-circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></div>
+        <h3>Rekomendacja</h3>
+        <p>Przedstawiamy konkretną propozycję: instrument, warunki i realną ocenę szans.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">4</span>
+        <div class="step-circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 4.5-5"/></svg></div>
+        <h3>Realizacja</h3>
+        <p>Przejmujemy proces: dokumentacja, złożenie wniosku i prowadzenie sprawy do finału.</p>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:48px;"><a class="btn" href="#kontakt">Zamów bezpłatną analizę</a></p>
   </div>
 </section>
 
 <!-- ================= DLA KOGO ================= -->
 <section id="dla-kogo">
   <div class="wrap">
-    <span class="label">Dla kogo</span>
-    <h2 class="h2">Z kim współpracujemy?</h2>
+    <span class="eyebrow">Dla kogo</span>
+    <h2 class="h2">Z kim <em>współpracujemy</em>?</h2>
     <div class="rule"></div>
     <div class="fit">
       <div class="fit-box fit-box--yes">
@@ -686,51 +692,24 @@
         </ul>
       </div>
     </div>
-    <p class="fit-note">Dzięki tej selekcji nasi klienci mają pewność, że <span class="mark">jeśli podejmujemy się projektu, wierzymy w jego powodzenie</span>.</p>
-  </div>
-</section>
-
-<!-- ================= JAK WSPÓŁPRACA ================= -->
-<section>
-  <div class="wrap">
-    <span class="label">Współpraca</span>
-    <h2 class="h2">Jak rozpocząć współpracę?</h2>
-    <div class="rule"></div>
-    <ol class="steps">
-      <li>
-        <h3>Kontakt</h3>
-        <p>Piszą lub dzwonią Państwo do nas i krótko opisują planowaną inwestycję.</p>
-      </li>
-      <li>
-        <h3>Rozmowa i analiza</h3>
-        <p>Zadajemy pytania, zbieramy informacje o firmie i bezpłatnie weryfikujemy dostępne programy. W razie potrzeby przyjeżdżamy na miejsce.</p>
-      </li>
-      <li>
-        <h3>Rekomendacja</h3>
-        <p>Przedstawiamy konkretną propozycję: instrument finansowy, warunki i realną ocenę szans.</p>
-      </li>
-      <li>
-        <h3>Realizacja</h3>
-        <p>Po Państwa decyzji przejmujemy proces: przygotowujemy dokumentację, składamy wniosek i prowadzimy sprawę aż do finału.</p>
-      </li>
-    </ol>
+    <p class="fit-note">Dzięki tej selekcji nasi klienci mają pewność, że jeśli podejmujemy się projektu, <em style="font-style:normal;color:var(--gold);">wierzymy w jego powodzenie</em>.</p>
   </div>
 </section>
 
 <!-- ================= ZESPÓŁ ================= -->
-<section id="zespol" class="band-navy">
+<section id="zespol" class="band-900">
   <div class="wrap">
-    <span class="label">Zespół</span>
-    <h2 class="h2">Kto poprowadzi Państwa projekt</h2>
+    <span class="eyebrow">Zespół</span>
+    <h2 class="h2">Kto poprowadzi <em>Państwa projekt</em></h2>
     <div class="rule"></div>
-    <p class="lead"><span class="intro">FC Consulting to dwuosobowy zespół specjalistów ds. funduszy unijnych.</span> Nie przekazujemy spraw dalej i nie obsługujemy Państwa przez sekretariat: projekt od pierwszej rozmowy po rozliczenie prowadzi <span class="mark">konkretna osoba</span>, z imieniem, nazwiskiem i bezpośrednim numerem telefonu.</p>
+    <p class="sec-lead">Nie przekazujemy spraw dalej i nie obsługujemy Państwa przez sekretariat: projekt od pierwszej rozmowy po rozliczenie prowadzi konkretna osoba, z imieniem, nazwiskiem i bezpośrednim numerem telefonu.</p>
     <div class="team">
       <article class="person">
         <img src="filip.webp" alt="Filip Chlewiński, specjalista ds. funduszy unijnych" width="700" height="875" loading="lazy">
         <div class="person-body">
           <h3>Filip Chlewiński</h3>
           <p class="role">Specjalista ds. funduszy unijnych i doradztwa biznesowego</p>
-          <p style="font-size:16px; color:#3A4250;">Magister prawa i aplikant radcowski. Łączy wiedzę prawną i finansową z praktyką w przygotowywaniu dokumentacji aplikacyjnej, biznesplanów i analiz ekonomicznych.</p>
+          <p class="bio">Magister prawa i aplikant radcowski. Łączy wiedzę prawną i finansową z praktyką w przygotowywaniu dokumentacji aplikacyjnej, biznesplanów i analiz ekonomicznych.</p>
           <p class="contact">
             <a href="tel:+48609094440">+48 609 094 440</a><br>
             <a href="mailto:f.chlewinski@gmail.com">f.chlewinski@gmail.com</a>
@@ -742,7 +721,7 @@
         <div class="person-body">
           <h3>Monika Jóźwiak-Bociąg</h3>
           <p class="role">Specjalistka ds. funduszy unijnych</p>
-          <p style="font-size:16px; color:#3A4250;">Od 2019 roku w doradztwie dla przedsiębiorstw. Specjalizuje się w dotacjach i preferencyjnych pożyczkach unijnych, ze szczególnym uwzględnieniem projektów eksportowych.</p>
+          <p class="bio">Od 2019 roku w doradztwie dla przedsiębiorstw. Specjalizuje się w dotacjach i preferencyjnych pożyczkach unijnych, ze szczególnym uwzględnieniem projektów eksportowych.</p>
           <p class="contact">
             <a href="tel:+48509758850">+48 509 758 850</a><br>
             <a href="mailto:dotacje.bociag@gmail.com">dotacje.bociag@gmail.com</a>
@@ -750,16 +729,14 @@
         </div>
       </article>
     </div>
-    <p class="muted" style="margin-top:36px; max-width:70ch;">Do każdego z nas można napisać albo zadzwonić bezpośrednio. Jeśli nie wiedzą Państwo, kto zajmie się Państwa sprawą, wystarczy jedna wiadomość na dowolny adres – ustalimy to po naszej stronie.</p>
-    <p style="margin-top:28px;"><a class="link-arrow" href="o-nas.html">Poznaj nas bliżej</a></p>
   </div>
 </section>
 
 <!-- ================= FAQ ================= -->
-<section id="faq" class="band-cream center">
+<section id="faq">
   <div class="wrap">
-    <span class="label">Pytania</span>
-    <h2 class="h2">Najczęstsze pytania o dotacje i pożyczki unijne</h2>
+    <span class="eyebrow">Pytania</span>
+    <h2 class="h2">Najczęstsze pytania o <em>dotacje i pożyczki unijne</em></h2>
     <div class="rule"></div>
     <div class="faq">
       <details>
@@ -791,88 +768,84 @@
 </section>
 
 <!-- ================= BLOG ================= -->
-<section id="blog" class="band-cream">
+<section id="blog" class="band-700">
   <div class="wrap">
-    <span class="label">Blog</span>
-    <h2 class="h2">O finansowaniu inwestycji bez urzędowego żargonu</h2>
+    <span class="eyebrow">Blog</span>
+    <h2 class="h2">O finansowaniu inwestycji <em>bez urzędowego żargonu</em></h2>
     <div class="rule"></div>
-    <p class="lead"><span class="intro">Piszemy o tym, o co przedsiębiorcy pytają nas najczęściej.</span> Czym różni się dotacja od pożyczki preferencyjnej, na co realnie można otrzymać wsparcie i jak wybrać instrument dopasowany do konkretnej inwestycji.</p>
-    <div class="posts-home">
-      <article class="post-card">
+    <div class="posts">
+      <article class="post">
         <span class="cat">Dotacje</span>
         <h3><a href="czym-sa-dotacje-dla-firm.html">Czym są dotacje dla firm i jak działają?</a></h3>
         <p>Dotacja to nie „darmowe pieniądze z Unii”, a instrument przypisany do konkretnych celów gospodarczych. Dlaczego sam zakup maszyny nie przesądza o dofinansowaniu?</p>
         <p class="more"><a href="czym-sa-dotacje-dla-firm.html">Czytaj artykuł →</a></p>
       </article>
-      <article class="post-card">
+      <article class="post">
         <span class="cat">Pożyczki preferencyjne</span>
         <h3><a href="pozyczki-unijne-kiedy-warto.html">Czym są pożyczki unijne i kiedy warto z nich skorzystać?</a></h3>
         <p>Oprocentowanie rzędu 1–2% zamiast rynkowych 8–9%, brak konkursu i krótsza procedura. Kiedy pożyczka jest lepszym rozwiązaniem niż dotacja?</p>
         <p class="more"><a href="pozyczki-unijne-kiedy-warto.html">Czytaj artykuł →</a></p>
       </article>
-      <article class="post-card">
+      <article class="post">
         <span class="cat">Poradnik</span>
         <h3><a href="jak-wybrac-finansowanie-dla-firmy.html">Jak wybrać finansowanie dla firmy?</a></h3>
         <p>„Pojawiła się dotacja, może wymyślimy coś, co możemy z niej sfinansować?” Dlaczego ta kolejność jest pułapką i od jakich pytań warto zacząć.</p>
         <p class="more"><a href="jak-wybrac-finansowanie-dla-firmy.html">Czytaj artykuł →</a></p>
       </article>
     </div>
-    <p style="margin-top:36px;"><a href="blog.html">Zobacz wszystkie artykuły →</a></p>
+    <p style="text-align:center; margin-top:40px;"><a href="blog.html">Zobacz wszystkie artykuły →</a></p>
   </div>
 </section>
 
 <!-- ================= KONTAKT ================= -->
-<section id="kontakt" class="band-navy band-navy--deep">
-  <div class="wrap">
-    <span class="label">Kontakt</span>
-    <h2 class="h2">Porozmawiajmy o finansowaniu Państwa inwestycji</h2>
-    <div class="rule"></div>
-    <div class="contact-grid">
-      <div>
-        <p class="lead"><span class="intro">Wystarczy krótka wiadomość lub telefon.</span> Sprawdzimy dostępne programy, ocenimy szanse projektu i przedstawimy konkretną rekomendację – <span class="mark">bezpłatnie i bez zobowiązań</span>.</p>
-        <div class="contact-direct">
-          <p>
-            <span class="who">Filip Chlewiński</span><br>
-            <a href="tel:+48609094440" style="color:#E3C567;">+48 609 094 440</a> · <a href="mailto:f.chlewinski@gmail.com" style="color:#E3C567;">f.chlewinski@gmail.com</a>
-          </p>
-          <p>
-            <span class="who">Monika Jóźwiak-Bociąg</span><br>
-            <a href="tel:+48509758850" style="color:#E3C567;">+48 509 758 850</a> · <a href="mailto:dotacje.bociag@gmail.com" style="color:#E3C567;">dotacje.bociag@gmail.com</a>
-          </p>
+<section id="kontakt">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow" style="text-align:left;">Kontakt</span>
+      <h2 class="h2" style="text-align:left;">Porozmawiajmy o finansowaniu <em>Państwa inwestycji</em></h2>
+      <div class="rule"></div>
+      <p style="font-size:17.5px;">Wystarczy krótka wiadomość lub telefon. Sprawdzimy dostępne programy, ocenimy szanse projektu i przedstawimy konkretną rekomendację – bezpłatnie i bez zobowiązań.</p>
+      <div class="direct">
+        <div class="direct-item">
+          <span class="who">Filip Chlewiński</span>
+          <span class="role">Specjalista ds. funduszy unijnych i doradztwa biznesowego</span><br>
+          <a href="tel:+48609094440">+48 609 094 440</a> · <a href="mailto:f.chlewinski@gmail.com">f.chlewinski@gmail.com</a>
+        </div>
+        <div class="direct-item">
+          <span class="who">Monika Jóźwiak-Bociąg</span>
+          <span class="role">Specjalistka ds. funduszy unijnych</span><br>
+          <a href="tel:+48509758850">+48 509 758 850</a> · <a href="mailto:dotacje.bociag@gmail.com">dotacje.bociag@gmail.com</a>
         </div>
       </div>
-      <!-- Formularz obsługiwany przez Formspree. Wysyłka odbywa się w tle (skrypt na końcu
-           pliku), więc klient zostaje na stronie i widzi potwierdzenie pod formularzem.
-           Bez JavaScriptu formularz wyśle się klasycznie na stronę Formspree. -->
-      <form class="form" action="https://formspree.io/f/xwlerozq" method="POST" data-ajax>
-        <label for="f-firma">Nazwa firmy</label>
-        <input id="f-firma" name="firma" type="text" required>
-
-        <label for="f-osoba">Osoba kontaktowa</label>
-        <input id="f-osoba" name="osoba" type="text" required>
-
-        <label for="f-tel">Telefon</label>
-        <input id="f-tel" name="telefon" type="tel">
-
-        <label for="f-mail">Adres e-mail</label>
-        <input id="f-mail" name="email" type="email" required>
-
-        <label for="f-opis">Planowana inwestycja</label>
-        <textarea id="f-opis" name="inwestycja" placeholder="Krótko: co Państwo planują, jaka jest szacowana wartość inwestycji i w jakim terminie." required></textarea>
-
-        <div class="consent">
-          <input id="f-rodo" name="zgoda" type="checkbox" required>
-          <label for="f-rodo">Zgadzam się na przetwarzanie moich danych w celu odpowiedzi na zapytanie, zgodnie z <a href="/polityka-prywatnosci.html">polityką prywatności</a>.</label>
-        </div>
-
-        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;">
-
-        <button class="btn" type="submit">Zamów bezpłatną analizę</button>
-
-        <p class="form-msg form-msg--ok" hidden>Dziękujemy. Wiadomość do nas dotarła – odezwiemy się, żeby omówić planowaną inwestycję i sprawdzić dostępne programy finansowania.</p>
-        <p class="form-msg form-msg--err" hidden>Nie udało się wysłać wiadomości. Prosimy o kontakt bezpośredni: <a href="mailto:f.chlewinski@gmail.com">f.chlewinski@gmail.com</a>.</p>
-      </form>
     </div>
+    <form class="form" action="https://formspree.io/f/xwlerozq" method="POST" data-ajax>
+      <label for="f-firma">Nazwa firmy</label>
+      <input id="f-firma" name="firma" type="text" required>
+
+      <label for="f-osoba">Osoba kontaktowa</label>
+      <input id="f-osoba" name="osoba" type="text" required>
+
+      <label for="f-tel">Telefon</label>
+      <input id="f-tel" name="telefon" type="tel">
+
+      <label for="f-mail">Adres e-mail</label>
+      <input id="f-mail" name="email" type="email" required>
+
+      <label for="f-opis">Planowana inwestycja</label>
+      <textarea id="f-opis" name="inwestycja" placeholder="Krótko: co Państwo planują, jaka jest szacowana wartość inwestycji i w jakim terminie." required></textarea>
+
+      <div class="consent">
+        <input id="f-rodo" name="zgoda" type="checkbox" required>
+        <label for="f-rodo">Zgadzam się na przetwarzanie moich danych w celu odpowiedzi na zapytanie, zgodnie z <a href="/polityka-prywatnosci.html">polityką prywatności</a>.</label>
+      </div>
+
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;">
+
+      <button class="btn" type="submit">Zamów bezpłatną analizę</button>
+
+      <p class="form-msg form-msg--ok" hidden>Dziękujemy. Wiadomość do nas dotarła – odezwiemy się, żeby omówić planowaną inwestycję i sprawdzić dostępne programy finansowania.</p>
+      <p class="form-msg form-msg--err" hidden>Nie udało się wysłać wiadomości. Prosimy o kontakt bezpośredni: <a href="mailto:f.chlewinski@gmail.com">f.chlewinski@gmail.com</a>.</p>
+    </form>
   </div>
 </section>
 
@@ -884,7 +857,7 @@
       <div>
         <img src="fc-logo.png" alt="FC Consulting" width="760" height="332">
         <p>Pozyskiwanie dotacji i pożyczek unijnych dla firm. Działamy na terenie całej Polski.</p>
-        <p class="muted"><!-- [WSTAW: pełna nazwa rejestrowa, NIP, adres siedziby] --></p>
+        <p><!-- [WSTAW: pełna nazwa rejestrowa, NIP, adres siedziby] --></p>
       </div>
       <div>
         <h3>Kontakt</h3>
@@ -892,7 +865,7 @@
           <li>Filip Chlewiński</li>
           <li><a href="tel:+48609094440">+48 609 094 440</a></li>
           <li><a href="mailto:f.chlewinski@gmail.com">f.chlewinski@gmail.com</a></li>
-          <li style="height:12px;"></li>
+          <li style="height:14px;"></li>
           <li>Monika Jóźwiak-Bociąg</li>
           <li><a href="tel:+48509758850">+48 509 758 850</a></li>
           <li><a href="mailto:dotacje.bociag@gmail.com">dotacje.bociag@gmail.com</a></li>
@@ -919,6 +892,7 @@
     <p class="footer-ai">Strona powstała z wykorzystaniem narzędzi sztucznej inteligencji. Treści, decyzje redakcyjne i korekta – człowiek.</p>
   </div>
 </footer>
+
 
 <script>
   var t = document.querySelector('.nav-toggle');
@@ -956,48 +930,18 @@
     });
   });
 
-  /* --- Wejście elementów przy przewijaniu --- */
   (function () {
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var targets = document.querySelectorAll(
-      'section .label, section .h2, section .lead, .stage, .area, .usp-item, .fit-box, ' +
-      '.steps li, .person, .post-card, .post, .value, .profile, .form, .article-cta, .box, .fit-note'
-    );
-    if (reduce || !('IntersectionObserver' in window)) {
-      targets.forEach(function (el) { el.classList.add('in'); });
-      return;
-    }
-    // opóźnienia kaskadowe w obrębie jednej grupy
-    var groups = document.querySelectorAll('.stages, .areas, .usp, .fit, .steps, .team, .posts-home, .posts, .values');
-    groups.forEach(function (g) {
-      Array.prototype.forEach.call(g.children, function (child, i) {
-        if (i > 0 && i < 7) child.classList.add('reveal-d' + i);
-      });
+    var targets = document.querySelectorAll('section .eyebrow, section .h2, section .rule, section .sec-lead, .card, .area, .why-item, .why-head, .step, .fit-box, .person, .post, .faq details, .form, .direct, .hero-inner > *');
+    if (reduce || !('IntersectionObserver' in window)) { targets.forEach(function (el) { el.classList.add('in'); }); return; }
+    document.querySelectorAll('.cards, .areas, .why-grid, .process, .fit, .team, .posts').forEach(function (g) {
+      Array.prototype.forEach.call(g.children, function (c, i) { if (i > 0 && i < 7) c.classList.add('reveal-d' + i); });
     });
     targets.forEach(function (el) { el.classList.add('reveal'); });
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-      });
-    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
     targets.forEach(function (el) { io.observe(el); });
-  })();
-
-  /* --- Wskaźnik postępu czytania na stronach artykułów --- */
-  (function () {
-    var art = document.querySelector('.article-inner');
-    if (!art) return;
-    var bar = document.createElement('div');
-    bar.className = 'progress';
-    document.body.appendChild(bar);
-    function upd() {
-      var top = art.offsetTop, h = art.offsetHeight - window.innerHeight;
-      var p = (window.scrollY - top) / (h > 0 ? h : 1);
-      bar.style.width = Math.max(0, Math.min(1, p)) * 100 + '%';
-    }
-    window.addEventListener('scroll', upd, { passive: true });
-    window.addEventListener('resize', upd);
-    upd();
   })();
 </script>
 
